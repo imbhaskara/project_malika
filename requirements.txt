@@ -7,4 +7,4 @@ seaborn
 plotly
 matplotlib
 sklearn
-sqlite3
+SQLAlchemy
