@@ -27,7 +27,7 @@ def development_plan():
         st.subheader('Rekapitulasi Data Development Plan 2022')
         output_name=f'Data_IDP_2022_{today:%d_%B_%Y}.xlsx'
         result = view_all_data()
-        data = pd.DataFrame(result, columns=['NIK', 'Career Ambition', 'Employee Strength', 'Employee Weakness', 'Kompetensi 1', 'Jenis Development 1', 'Deskripsi Development 1', 'Deadline Development 1', 'Kompetensi 2', 'Jenis Development 2', 'Deskripsi Development 2', 'Deadline Development 2', 'Kompetensi 3', 'Jenis Development 3', 'Deskripsi Development 3', 'Deadline Development 3', 'Kompetensi 4', 'Jenis Development 4', 'Deskripsi Development 4', 'Deadline Development 4', 'Kompetensi 5', 'Jenis Development 5', 'Deskripsi Development 5', 'Deadline Development 5', 'Rekomendasi / Catatan'])
+        data = pd.DataFrame(result, columns=['NIK', 'Career Ambition', 'Employee Strength', 'Employee Weakness', 'Tgl Mulai Cuti 1', 'Lama Cuti 1', 'Alasan Cuti 1', 'Tgl Mulai Cuti 2', 'Lama Cuti 2', 'Alasan Cuti 2', 'Tgl Mulai Cuti 3', 'Lama Cuti 3', 'Alasan Cuti 3', 'Kompetensi 1', 'Jenis Development 1', 'Deskripsi Development 1', 'Deadline Development 1', 'Kompetensi 2', 'Jenis Development 2', 'Deskripsi Development 2', 'Deadline Development 2', 'Kompetensi 3', 'Jenis Development 3', 'Deskripsi Development 3', 'Deadline Development 3', 'Kompetensi 4', 'Jenis Development 4', 'Deskripsi Development 4', 'Deadline Development 4', 'Kompetensi 5', 'Jenis Development 5', 'Deskripsi Development 5', 'Deadline Development 5', 'Rekomendasi / Catatan'])
         st.write(data)
         st.markdown(get_table_download_link(data, output_file=output_name), unsafe_allow_html=True)
 
